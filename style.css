@@ -1,6 +1,7 @@
 :root {
     --color: #FFF8F1;
     --background: #A5B6CC;
+    --hover-color: #1D2631;
 
     --body-copy: 1rem;
     --heading-copy: calc(var(--body-copy) * 3);
@@ -46,6 +47,8 @@ ul {
     padding-block: var(--vertical);
     li:hover {
         font-weight: bolder;
+        color: var(--hover-color);
+        
     }
 }
 
@@ -62,5 +65,6 @@ hgroup, footer {
 footer p {
     :hover{
         font-weight: bolder;
+        color: var(--hover-color);
     }
 }
