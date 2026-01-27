@@ -3,10 +3,8 @@
     --background: #A5B6CC;
 
     --body-copy: 1rem;
-    --heading-copy: calc(var(--body-copy) * 5);
     --font: monospace;
 
-    --gutter: 2rem;
     --vertical: 4rem;
 }
 
@@ -16,8 +14,6 @@ body {
     background-color: var(--background);
     font-size: var(--body-copy);
     block-size: 100vh;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
     align-items: center;
 }
 
@@ -27,7 +23,6 @@ main {
 }
 
 h1 {
-    font-size: calc(var(--heading-copy) * 2);
     /* font-weight: 200; */
     text-align: center;
 }
@@ -35,7 +30,6 @@ h1 {
 
 ul {
     padding-inline: var(--gutter);
-    display: grid;
     gap: var(--gutter);
 }
 
