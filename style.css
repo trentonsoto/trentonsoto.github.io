@@ -3,8 +3,10 @@
     --background: #A5B6CC;
 
     --body-copy: 1rem;
+    --heading-copy: calc(var(--body-copy) * 3);
     --font: monospace;
 
+    --gutter: 10rem;
     --vertical: 4rem;
 }
 
@@ -14,6 +16,8 @@ body {
     background-color: var(--background);
     font-size: var(--body-copy);
     block-size: 100vh;
+    /* display: grid; */
+    /* grid-template-rows: min-content 1fr min-content; */
     align-items: center;
 }
 
@@ -22,7 +26,12 @@ main {
     padding-block: var(--vertical);
 }
 
+nav {
+    text-align: center;
+}
+
 h1 {
+    font-size: calc(var(--heading-copy) * 2.9);
     /* font-weight: 200; */
     text-align: center;
 }
@@ -30,7 +39,14 @@ h1 {
 
 ul {
     padding-inline: var(--gutter);
+    display: flex;
+    justify-content: center;
     gap: var(--gutter);
+    padding-inline: var(--gutter);
+    padding-block: var(--vertical);
+    li:hover {
+        font-weight: bolder;
+    }
 }
 
 
@@ -41,4 +57,10 @@ hgroup, footer {
     background-color: var(--color); */
     padding-inline: var(--gutter);
     padding-block: var(--vertical);
+}
+
+footer p {
+    :hover{
+        font-weight: bolder;
+    }
 }
