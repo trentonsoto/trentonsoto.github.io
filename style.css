@@ -1,16 +1,17 @@
 :root {
-    --color: dodgerblue;
-    --background: #ddd;
+    --color: #FFF8F1;
+    --background: #A5B6CC;
 
     --body-copy: 1rem;
-    --heading-copy: calc(var(--body-copy) * 3);
+    --heading-copy: calc(var(--body-copy) * 5);
+    --font: monospace;
 
     --gutter: 2rem;
     --vertical: 4rem;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: var(--font);
     color: var(--color);
     background-color: var(--background);
     font-size: var(--body-copy);
@@ -26,7 +27,9 @@ main {
 }
 
 h1 {
-    font-size: var(--heading-copy);
+    font-size: calc(var(--heading-copy) * 2);
+    /* font-weight: 200; */
+    text-align: center;
 }
 
 
@@ -40,8 +43,8 @@ ul {
 
 
 hgroup, footer {
-    color: var(--background);
-    background-color: var(--color);
+    /* color: var(--background);
+    background-color: var(--color); */
     padding-inline: var(--gutter);
     padding-block: var(--vertical);
 }
