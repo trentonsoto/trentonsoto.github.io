@@ -24,7 +24,8 @@ body {
 
 main {
     padding-inline: var(--gutter);
-    padding-block: var(--vertical);
+    padding-block: calc(var(--vertical) * 1/2);
+    text-align: center;
 }
 
 nav {
@@ -60,9 +61,26 @@ hgroup, footer {
     background-color: var(--color); */
     padding-inline: var(--gutter);
     padding-block: var(--vertical);
+    p {
+        
+    }
 }
 
+hgroup p{
+    font-size: calc(var(--body-copy) * 3);
+    /* letter-spacing: 5rem; */
+    text-align: center;
+     padding-block: calc(var(--vertical) * 1/2);
+     :hover{
+        font-weight: bolder;
+        color: var(--hover-color);
+    }
+
+}
+
+
 footer p {
+    text-align: center;
     :hover{
         font-weight: bolder;
         color: var(--hover-color);
