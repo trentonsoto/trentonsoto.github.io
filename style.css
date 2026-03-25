@@ -26,6 +26,8 @@ main {
     padding-inline: var(--gutter);
     padding-block: calc(var(--vertical) * 1/2);
     text-align: center;
+    padding-inline: 22rem;
+    line-height: 2rem;
 }
 
 nav {
