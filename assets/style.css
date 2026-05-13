@@ -129,3 +129,8 @@ main {
 
 
 /* PROJECTS */
+.projects {
+    display: flex;
+    flex-direction: column;
+    
+}
