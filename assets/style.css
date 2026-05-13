@@ -33,7 +33,7 @@
 
 body {
     font-family: var(--font);
-    color: var(--white);
+    color: var(--navy);
     background-color: var(--navy);
     font-size: var(--body-copy);
     block-size: 100vh;
@@ -55,8 +55,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: var(--gutter);
-    padding-block: var(--vertical);
+    padding-inline: calc(var(--gutter) / 2);
+    padding-block: calc(var(--vertical) * 1/2);
+
+    a {
+        text-decoration: none;
+        color: var(--navy);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 h1 {
