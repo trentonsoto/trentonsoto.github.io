@@ -5,118 +5,65 @@
     --black: #0a0a0a;
 
     --body-copy: 1rem;
-    --heading-copy: calc(var(--body-copy) * 3);
+    /* --heading-copy: calc(var(--body-copy) * 3); */
     --font: monospace;
 
-    --gutter: 10rem;
+    --gutter: 2.5rem;
     --vertical: 4rem;
+    --sidebar: 15rem;
+    --gap: 1rem;
 }
-
-/* .hero {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    z-index: -1;
-} */
 
 body {
     font-family: var(--font);
-    color: var(--navy);
+    color: var(--white);
     background-color: var(--navy);
     font-size: var(--body-copy);
-    block-size: 100vh;
-    /* display: grid; */
-    /* grid-template-rows: min-content 1fr min-content; */
-    align-items: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: var(--sidebar) 1fr;
 }
 
-/* main {
-    padding-inline: var(--gutter);
-    padding-block: calc(var(--vertical) * 1/2);
-    text-align: center;
-    padding-inline: 22rem;
-    line-height: 2rem;
-} */
+/* side comment, I totally made this harder for myself by 1) doing this today and 2) changing my design so many times...trenton trenton trenton */
 
-nav {
-    position: relative;
+
+
+/* SIDEBAR */
+.sidebar {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding-inline: calc(var(--gutter) / 2);
-    padding-block: calc(var(--vertical) * 1/2);
+    padding: var(--gutter);
+    border-right: 1px solid var(--blue);
 
-    a {
+    .sidebar-name a{
+        font-size: var(--body-copy);
+        font-family: var(--font);
+        color: var(--white);
         text-decoration: none;
-        color: var(--navy);
 
         &:hover {
             text-decoration: underline;
         }
     }
-}
 
-h1 {
-    font-size: calc(var(--heading-copy) * 2.8);
-    /* font-weight: 200; */
-    text-align: center;
-    font-family: var(--font);
-}
+    .sidebar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
 
+        a {
+            font-size: var(--body-copy);
+            font-family: var(--font);
+            color: var(--white);
+            opacity: 0.5;
+            text-decoration: none;
 
-/* ul {
-    padding-inline: var(--gutter);
-    display: flex;
-    justify-content: center;
-    gap: var(--gutter);
-    padding-inline: var(--gutter);
-    padding-block: var(--vertical);
-    li:hover {
-        font-weight: bolder;
-        color: var(--blue);
-        
-    }
-} */
-
-
-
-
-/* hgroup, footer {
-    color: var(--background);
-    background-color: var(--color);
-    padding-inline: var(--gutter);
-    padding-block: var(--vertical);
-} */
-
-/* hgroup p{
-    font-size: calc(var(--body-copy) * 3);
-    letter-spacing: 5rem;
-    text-align: center;
-     padding-block: calc(var(--vertical) * 1/2);
-     :hover{
-        font-weight: bolder;
-        color: var(--blue);
-    }
-
-} */
-
-
-footer p {
-    text-align: center;
-    :hover{
-        font-weight: bolder;
-        color: var(--blue);
+            &:hover {
+                text-decoration: underline;
+                opacity: 1;
+            }
+        }
     }
 }
+
