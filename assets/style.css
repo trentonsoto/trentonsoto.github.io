@@ -80,6 +80,7 @@ main {
 
 
 
+/* HEADER INFORMATION */
 .header {
     display: flex;
     flex-direction: column;
@@ -103,3 +104,28 @@ main {
     }
 }
 
+
+
+/* INDEX */
+.index-text {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap) * 0.5);
+    position: absolute; 
+    /* parent is relative */
+    text-align: right;
+    right: var(--gutter);
+    top: var(--gutter);
+
+    p {
+        font-size: calc(var(--body-copy) * 0.75);
+        opacity: 0.5;
+        letter-spacing: 0.15em;
+    }
+}
+
+
+
+
+
+/* PROJECTS */
