@@ -25,6 +25,7 @@ body {
 }
 
 /* side comment, I totally made this harder for myself by 1) doing this today and 2) changing my design so many times...trenton trenton trenton */
+/* however, deleting everything INSTEAD of commenting out old stuff (which I normally did) is so much easier because I am not looking at an overwhelming amount of code */
 
 
 
@@ -64,6 +65,41 @@ body {
                 opacity: 1;
             }
         }
+    }
+}
+
+
+
+main {
+    padding: var(--gutter);
+    display: flex;
+    flex-direction: column;
+    gap: var(--vertical);
+    position: relative;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    max-width: 50%;
+
+    .header-title {
+        font-size: calc(var(--body-copy) * 0.75);
+        letter-spacing: 0.15em;
+        opacity: 0.5;
+    }
+
+    h1 {
+        font-size: calc(var(--body-copy) * 3);
+    }
+
+    .header-info {
+        font-size: calc(var(--body-copy) * 0.75);
+        opacity: 0.5;
+        line-height: 1.5;
     }
 }
 
