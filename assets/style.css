@@ -207,7 +207,7 @@ main {
     }
 
     .projects .project-title {
-        font-size: calc(var(--body-copy) * 0.75);
+        font-size: calc(var(--body-copy) * 0.95);
     }
 
     .project-description {
@@ -231,15 +231,26 @@ main {
 
 
 @media (max-width: 680px) {
+
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--gap);
+    }
+    
+    .header {
+        padding-block-start: var(--gap);
+    }
     .header h1 {
         font-size: calc(var(--body-copy) * 2);
     }
 
-    .projects a {
-        grid-template-columns: 1fr auto auto;
+    .projects .project-title {
+        font-size: calc(var(--body-copy) * 0.75);
     }
 
-    .project-description {
-        /* display: none; */
-    }
 }
