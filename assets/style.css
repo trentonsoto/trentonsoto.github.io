@@ -237,6 +237,10 @@ main {
         grid-template-columns: 1fr;
     }
 
+    main {
+        padding: calc(var(--gap) * 0.5);
+    }
+
     .sidebar {
         flex-direction: column;
         align-items: flex-start;
