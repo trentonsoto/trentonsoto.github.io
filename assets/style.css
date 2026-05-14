@@ -255,7 +255,7 @@ main {
     }
 
     .projects .project-title {
-        font-size: calc(var(--body-copy) * 0.75);
+        font-size: calc(var(--body-copy) * 0.85);
     }
 
     .projects:last-child {
