@@ -33,7 +33,9 @@ body {
 .sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    gap: calc(var(--gap) * 15);
     padding: var(--gutter);
     border-right: 1px solid var(--blue);
 
@@ -139,7 +141,11 @@ main {
         align-items: center;
         gap: calc(var(--gap) * 2);
         border-top: 1px solid var(--blue);
-        padding: calc(var(--gap) * 3) 0;
+        padding: calc(var(--gap) * 2.5) 0;
+    }
+
+    .project-title {
+        font-size: calc(var(--body-copy) * 1.5);
     }
 }
 
