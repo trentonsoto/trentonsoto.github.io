@@ -87,12 +87,13 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--gap);
-    max-width: 50%;
+    /* max-width: 70%; */
 
     .header-title {
         font-size: calc(var(--body-copy) * 0.75);
         letter-spacing: 0.15em;
         opacity: 0.5;
+
     }
 
     h1 {
@@ -103,6 +104,7 @@ main {
         font-size: calc(var(--body-copy) * 0.75);
         opacity: 0.5;
         line-height: 1.5;
+        max-width: 70%;
     }
 }
 
@@ -134,6 +136,7 @@ main {
 .projects {
     display: flex;
     flex-direction: column;
+    gap: calc(var(--gap) * 1.15);
 
     a {
         display: grid;
@@ -145,7 +148,12 @@ main {
     }
 
     .project-title {
-        font-size: calc(var(--body-copy) * 1.5);
+        font-size: calc(var(--body-copy) * 0.9);
+    }
+
+    .project-description {
+        font-size: calc(var(--body-copy) * 0.75);
+        opacity: 0.9;
     }
 
     .project-info {
@@ -164,3 +172,69 @@ main {
     opacity: 0.5;
 }
 /* it works! */
+
+@media (max-width: 900px) {
+    body {
+        grid-template-columns: 1fr;
+        padding: var(--gap);
+    }
+
+    .sidebar {
+        flex-direction: row;
+        justify-content: space-between;
+        border-right: none;
+        border-bottom: 1px solid var(--blue);
+        padding: var(--gap);
+
+        .sidebar-nav {
+            flex-direction: row;
+            gap: calc(var(--gap) * 2);
+
+            a {
+                font-size: calc(var(--body-copy) * 0.85);
+            }
+        }
+    }
+
+    .projects a {
+        padding-inline: var(--gap);
+    }
+
+    .projects .project-title {
+        font-size: calc(var(--body-copy) * 0.75);
+    }
+
+    .project-description {
+        font-size: calc(var(--body-copy) * 0.75);
+        opacity: 0.9;
+    }
+
+    main {
+        padding: var(--gap);
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    .index-text {
+        position: static;
+        text-align: left;
+    }
+}
+
+
+
+@media (max-width: 680px) {
+    .header h1 {
+        font-size: calc(var(--body-copy) * 2);
+    }
+
+    .projects a {
+        grid-template-columns: 1fr auto auto;
+    }
+
+    .project-description {
+        display: none;
+    }
+}
