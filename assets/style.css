@@ -163,3 +163,4 @@ main {
 .projects a:hover .project-title, .projects a:hover .project-info, .projects a:hover .arrow, .projects a:hover .project-description {
     opacity: 0.5;
 }
+/* it works! */
