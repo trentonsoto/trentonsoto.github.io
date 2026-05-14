@@ -221,6 +221,7 @@ main {
 
     .header {
         max-width: 100%;
+        padding-block-start: var(--gap);
     }
 
     .index-text {
