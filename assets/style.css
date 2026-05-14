@@ -132,5 +132,18 @@ main {
 .projects {
     display: flex;
     flex-direction: column;
-    
+
+    a {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+        gap: calc(var(--gap) * 2);
+        border-top: 1px solid var(--blue);
+        padding: calc(var(--gap) * 3) 0;
+    }
+}
+
+/* im not sure if this will work, but let me try it down below... */
+.projects a:hover .project-title, .projects a:hover .project-info, .projects a:hover .arrow {
+    opacity: 0.5;
 }
