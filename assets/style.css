@@ -258,4 +258,8 @@ main {
         font-size: calc(var(--body-copy) * 0.75);
     }
 
+    .projects:last-child {
+        padding-block-end: var(--gap);
+    }
+
 }
