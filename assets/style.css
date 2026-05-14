@@ -147,6 +147,16 @@ main {
     .project-title {
         font-size: calc(var(--body-copy) * 1.5);
     }
+
+    .project-info {
+        font-size: calc(var(--body-copy) * 0.75);
+        opacity: 0.9;
+    }
+
+    .arrow {
+        font-size: var(--body-copy);
+        opacity: 0.9;
+    }
 }
 
 /* im not sure if this will work, but let me try it down below... */
