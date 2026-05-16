@@ -170,7 +170,17 @@ main {
     .arrow {
         font-size: var(--body-copy);
         opacity: 0.9;
+        transition: transform 0.3s;
     }
+}
+
+.projects a:hover .project-title, .projects a:hover .project-description, .projects a:hover .project-info, .projects a:hover .arrow {
+    transform: translateX(5px);
+    transition: transform 0.3s;
+}
+
+.project-title, .project-description, .project-info, .arrow {
+    transition: transform 0.3s;
 }
 
 /* im not sure if this will work, but let me try it down below... */
