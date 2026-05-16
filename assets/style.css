@@ -178,7 +178,6 @@ main {
     transform: translateX(5px);
     transition: transform 0.3s;
 }
-
 .project-title, .project-description, .project-info, .arrow {
     transition: transform 0.3s;
 }
